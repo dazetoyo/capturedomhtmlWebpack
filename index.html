@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Brasscheck</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!--
+    <link rel="stylesheet" type="text/css" href="style/style.css" /> -->
+    <script src="dist/app.min.js"></script>
+    <link rel="stylesheet" href="dist/app.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+    <!-- <script src="html2canvas.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/html2canvas-ie-reapply-styles-fix@1.0.0-rc.5.1/dist/html2canvas.min.js"></script> -->
+  </head>
+
+  <body id="capture" class="overflow-hidden">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- <button onClick="window.docapture()">Click Me</button> -->
+    <!-- Add your site or application content here -->
+    <div class="overflow-hidden">
+      <header>
+        <div class="text-center">
+          <form id="form_download" target="_blank">
+            <input
+              id="input-name"
+              class="certbtn"
+              type="text"
+              name=""
+              value=""
+              onkeyup="window.inputsave()"
+              placeholder="Enter your name"
+            />
+            <input id="hiddenimg" type="hidden" name="image" value=" " />
+            <button
+              id="submit_button"
+              class="certbtn"
+              onclick="window.docapture()"
+            >
+              Download your certificate
+            </button>
+          </form>
+        </div>
+      </header>
+      <main>
+        <div class="container" id="my-node">
+          <div class="row">
+            <div class="col justify-content-center d-flex">
+              <img class="logo" src="assets/logo.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                width="auto"
+                height="auto"
+                class="main-image-mobile mb-3em"
+                src="assets/50percent_TITEL_01.png"
+                alt="50% Completed"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col justify-content-center d-flex">
+              <p>You're halfway thru the</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1 class="text-center">
+                Daily Stoic Habits for Success,
+              </h1>
+              <h1 class="text-center">
+                Habits For Happiness Challenge.
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col justify-content-center d-flex">
+              <img
+                class="main-image mb-5em"
+                src="assets/50percent_TITEL_02.png"
+                alt="50% Completed"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p id="input-show" class="text-center name-margin"></p>
+
+              <hr class="separator" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col justify-content-center d-flex">
+              <p class="text-center hidemobile showdesktop">
+                Three more weeks to go... can you stick with it?
+              </p>
+
+              <p class="text-center hidedesktop ">
+                Three more weeks to go...
+              </p>
+              <p class="text-center hidedesktop">
+                can you stick with it?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                class="seal"
+                src="assets/seal_01.png"
+                width="400"
+                height="100"
+                alt=""
+              />
+            </div>
+            <div class="col signature-fix">
+              <img
+                class="signature-image"
+                src="assets/ryan signature.png"
+                alt="Signature"
+              />
+              <hr class="signature-separator" />
+
+              <p class="text-center signature">Ryan Holiday, <br /></p>
+              <p class="text-center signature">
+                Founder, Daily Stoic
+              </p>
+            </div>
+          </div>
+          <div class="dailystoic-website">
+            <a href="https://dailystoic.com" target="_blank">
+              dailystoic.com
+            </a>
+          </div>
+        </div>
+        <!-- hidden div -->
+        <div
+          style="    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top:0"
+        >
+          <div class="container" id="my-hidden-node">
+            <div class="row">
+              <div class="col justify-content-center d-flex">
+                <img class="logo" src="assets/logo.png" alt="Logo" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img
+                  width="auto"
+                  height="auto"
+                  class="main-image-mobile mb-3em"
+                  src="assets/50percent_TITEL_01.png"
+                  alt="50% Completed"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col justify-content-center d-flex">
+                <p>You're halfway thru the</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h1 class="text-center">
+                  Daily Stoic Habits for Success,
+                </h1>
+                <h1 class="text-center">
+                  Habits For Happiness Challenge.
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col justify-content-center d-flex">
+                <img
+                  class="main-image mb-5em"
+                  src="assets/50percent_TITEL_02.png"
+                  alt="50% Completed"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p id="input-show-hidden" class="text-center name-margin"></p>
+
+                <hr class="separator" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col justify-content-center d-flex">
+                <p class="text-center ">
+                  Three more weeks to go... can you stick with it?
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img
+                  class="seal"
+                  src="assets/seal_01.png"
+                  width="400"
+                  height="100"
+                  alt=""
+                />
+              </div>
+              <div class="col signature-fix">
+                <img
+                  class="signature-image"
+                  src="assets/ryan signature.png"
+                  alt="Signature"
+                />
+                <hr class="signature-separator" />
+
+                <p class="text-center signature">Ryan Holiday, <br /></p>
+                <p class="text-center signature">
+                  Founder, Daily Stoic
+                </p>
+              </div>
+            </div>
+            <div class="dailystoic-website">
+              <a href="https://dailystoic.com" target="_blank">
+                dailystoic.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
